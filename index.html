@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+
+	<link href='font/font.css' rel='stylesheet'>
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+		body {
+			font-family: "Open Sans";
+		}
+
+		.pr0 {
+			padding-right: 0px;
+		}
+
+		.pl0 {
+			padding-left: 0px;
+		}
+
+		.tar {
+			text-align: right;
+		}
+
+		.headerText {
+			text-align: right;
+			font-size: 37px;
+
+			border-right: solid;
+		}
+
+		.personsImage {
+			width: 100%;
+		}
+
+		.topheading {
+			font-size: 20px;
+			font-weight: 700;
+			font-style: normal italic;
+		}
+
+		.heading {
+			font-size: 20px;
+			font-weight: 700;
+			font-style: normal;
+		}
+
+		.table>tbody>tr>td,
+		.table>tbody>tr>th,
+		.table>tfoot>tr>td,
+		.table>tfoot>tr>th,
+		.table>thead>tr>td,
+		.table>thead>tr>th {
+			border-top: 1px solid rgba(0, 0, 0, 0.05);
+			vertical-align: middle;
+		}
+
+		.col1 {
+			width: 125px
+		}
+
+		.col3 {
+			width: 125px
+		}
+
+		hr {
+			border-top: 1px solid black;
+		}
+
+		.txtGray {
+			color: #676767
+		}
+
+		label {
+			padding-left: 5px;
+		}
+
+		p{
+		color:#525252;
+		font-size:12px;
+		}
+
+		.skillbar {
+			position:relative;
+			display:block;
+			margin-bottom:15px;
+			width:100%;
+			background:#eee;
+			height:35px;
+			border-radius:3px;
+			-moz-border-radius:3px;
+			-webkit-border-radius:3px;
+			-webkit-transition:0.4s linear;
+			-moz-transition:0.4s linear;
+			-ms-transition:0.4s linear;
+			-o-transition:0.4s linear;
+			transition:0.4s linear;
+			-webkit-transition-property:width, background-color;
+			-moz-transition-property:width, background-color;
+			-ms-transition-property:width, background-color;
+			-o-transition-property:width, background-color;
+			transition-property:width, background-color;
+		}
+
+		.skillbar-title {
+			position:absolute;
+			top:0;
+			left:0;
+		width:110px;
+			font-weight:bold;
+			font-size:13px;
+			color:#ffffff;
+			background:#6adcfa;
+			-webkit-border-top-left-radius:3px;
+			-webkit-border-bottom-left-radius:4px;
+			-moz-border-radius-topleft:3px;
+			-moz-border-radius-bottomleft:3px;
+			border-top-left-radius:3px;
+			border-bottom-left-radius:3px;
+		}
+
+		.skillbar-title span {
+			display:block;
+			background:rgba(0, 0, 0, 0.1);
+			padding:0 20px;
+			height:35px;
+			line-height:35px;
+			-webkit-border-top-left-radius:3px;
+			-webkit-border-bottom-left-radius:3px;
+			-moz-border-radius-topleft:3px;
+			-moz-border-radius-bottomleft:3px;
+			border-top-left-radius:3px;
+			border-bottom-left-radius:3px;
+		}
+
+		.skillbar-bar {
+			height:35px;
+			width:0px;
+			background:#6adcfa;
+			border-radius:3px;
+			-moz-border-radius:3px;
+			-webkit-border-radius:3px;
+		}
+
+		.skill-bar-percent {
+			position:absolute;
+			right:10px;
+			top:0;
+			font-size:11px;
+			height:35px;
+			line-height:35px;
+			color:#ffffff;
+			color:rgba(0, 0, 0, 0.4);
+		}
+		.Occupation{
+		 border-top: 1px solid black; 
+		 margin-top: 4px; 
+		 margin-bottom: 03px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row" style="padding-top:10px">
+			<div class="col-md-3 ">
+				<table class="table">
+					<thead> <span class="heading" style="text-align: right;">Contact</span></thead>
+					<tbody>
+						<tr>
+							<td>+92123456789</td>
+							<td><img src="images/phone.png" style="width:25px;max-height:100%;"></td>
+						</tr>
+						<tr>
+							<td><i>15 Royal Birkdale Ct, NY, 14526<i></td>
+									<td><img src="images/city.png" style="width:25px;max-height:100%;" > </td>
+								</tr>
+								<tr>
+									<td><i>erikbenjimen@hotmail.com</i></td>
+							<td><img src="images/message.png" style="width:25px;max-height:100%;"> </td>
+						</tr>
+						<tr>
+							<td><i>erikbenjimen.com</i></td>
+							<td><img src="images/home.png" style="width:25px;max-height:100%;"> </td>
+						</tr>
+						<tr>
+							<td><i>erikbenjimen.facebook.com</i></td>
+							<td><img src="images/fb.png" style="width:25px;max-height:100%;"> </td>
+
+					</tbody>
+				</table>
+			</div>
+			<div class="col-md-7 ">
+				<table class="table" style="margin-bottom: 0px;">
+					<tr>
+						<table class="table">
+							<thead>
+								<span class="heading">Things I Care About</span>
+							</thead>
+							<tbody>
+								<tr>
+									<td><img src="images/earth.png" style="width:35px;max-height:100%; " title="Planet Earth"></td>
+									<td><i class="txtGray">Earth</i></td>
+									<td><img src="images/flower.png" style="width:35px;max-height:100%;" title="Nature"></td>
+									<td><i class="txtGray">Nature</i></td>
+									<td><img src="images/justice.png" style="width:35px;max-height:100%;" title="Equality"></td>
+									<td><i class="txtGray">Equality</i></td>
+									<td><img src="images/pacifism.png" style="width:35px;max-height:100%;" title="Pacifism"></td>
+									<td><i class="txtGray">Pacifism</i></td>
+								</tr>
+							</tbody>
+						</table>
+					</tr>
+					<tr>
+						<table class="table">
+
+							<thead>
+								<span class="heading">Activities I Love</span>
+							</thead>
+							<tbody>
+								<tr>
+									<td><img src="images/book.png" style="width:35px;max-height:100%; " title="Reading"></td>
+									<td><i class="txtGray">Reading</i></td>
+									<td><img src="images/camera.png" style="width:35px;max-height:100%;" title="Photography"></td>
+									<td><i class="txtGray">Photography</i></td>
+									<td><img src="images/tent.png" style="width:35px;max-height:100%;" title="Camping"></td>
+									<td><i class="txtGray">Camping</i></td>
+									<td><img src="images/target.png" style="width:35px;max-height:100%;" title="Sports"></td>
+									<td><i class="txtGray">Sports</i></td>
+									<td><img src="images/music-player.png" style="width:35px;max-height:100%;" title="Music"></td>
+									<td><i class="txtGray">Music</i></td>
+								</tr>
+							</tbody>
+						</table>
+					</tr>
+					</tbody>
+				</table>
+				<span class="heading">Faviourte Quote</span><br>
+				<span>Innovation distinguishes between a leader and a follower<i class="txtGray">-Steve Job</i></span>
+			</div>
+		</div>
+		<div class="row" style="padding-top:10px">
+			<div class="col-md-3"></div>
+			<div class="col-md-7 ">
+				<table class="table">
+					<thead><span class="heading"><img src="images/expert.png" style="width:25px;max-height:100%; "><label>Areas Of Experties</label></span></thead>
+					<tbody>
+						<tr>
+							<div class="skillbar clearfix " data-percent="80%">
+								<div class="skillbar-title" style="background: #ffc107;"><span>HTML5</span></div>
+								<div class="skillbar-bar" style="background: #ffc107;"></div>
+								<div class="skill-bar-percent">80%</div>
+							</div> 
+							<div class="skillbar clearfix " data-percent="85%">
+								<div class="skillbar-title" style="background: #2196f3;"><span>CSS3</span></div>
+								<div class="skillbar-bar" style="background: #2196f3;"></div>
+								<div class="skill-bar-percent">85%</div>
+							</div> 
+							<div class="skillbar clearfix " data-percent="75%">
+								<div class="skillbar-title" style="background: #4caf50;"><span>jQuery</span></div>
+								<div class="skillbar-bar" style="background: #4caf50;"></div>
+								<div class="skill-bar-percent">75%</div>
+							</div> 
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row" style="padding-top:10px">
+			<div class="col-md-3"></div>
+			<div class="col-md-7 ">
+				<table class="table">
+					<thead><span class="heading"><img src="images/experience.png" style="width:25px;max-height:100%; "><label>Work Experience</label></span>
+						
+					</thead>
+					<tbody>
+						<tr>
+							<td class="col1">Lorem International</td>
+							<td>Enter your Work Experience here, Enter Your Work Experience Here lorem ipsum bacon.</td>
+							<td class="col3">2015 - 2016</td>
+						</tr>
+						<tr>
+							<td class="col1">Ipsum Istitute</td>
+							<td>Enter your Work Experience here, Enter Your Work Experience Here lorem ipsum bacon.</td>
+							<td class="col3">2015 - 2016</td>
+						</tr>
+						<tr>
+							<td class="col1">Bacon Reserch</td>
+							<td>Enter your Work Experience here, Enter Your Work Experience Here lorem ipsum bacon.</td>
+							<td class="col3">2015 - 2016</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row" style="padding-top:10px">
+			<div class="col-md-3"></div>
+			<div class="col-md-7 ">
+				<table class="table">
+					<thead><span class="heading"><img src="images/education.png" style="width:25px;max-height:100%; "><label>Education</label></span>
+						<span
+						 class="txtGray"><label>Last 3</label></span>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="col1">BS Computer Sciences </td>
+							<td>National University of Computing and Emerging Science</td>
+							<td class="col3">2012-2016</td>
+						</tr>
+						<tr>
+							<td class="col1">High School</td>
+							<td>Green Field High School</td>
+							<td class="col3">2010-2012</td>
+						</tr>
+						<tr>
+							<td class="col1">Middle School</td>
+							<td>The Canyon Middle School</td>
+							<td class="col3">2008-2010</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row" style="padding-top:10px">
+			<div class="col-md-3"></div>
+			<div class="col-md-7 ">
+				<table class="table">
+					<thead><span class="heading"><img src="images/medal.png" style="width:25px;max-height:100%; "><label>Awards</label></span>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="col1">First Position</td>
+							<td>Cross Country Programming</td>
+							<td class="col3">2014</td>
+						</tr>
+						<tr>
+							<td class="col1">Second Position</td>
+							<td>National Debating Compition</td>
+							<td class="col3">2015</td>
+						</tr>
+						<tr>
+							<td class="col1">First Position</td>
+							<td>All Universities Sports Compition </td>
+							<td class="col3">2016</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row" style="padding-top:10px">
+			<div class="col-md-3"></div>
+			<div class="col-md-7 ">
+				<table class="table">
+					<thead> <span class="heading"><img src="images/projects.png" style="width:25px;max-height:100%; "><label>Projects</label></span>
+						<span
+						 class="txtGray"><label>Course and Profesional Projects</label></span>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="col1">Final Year Project</td>
+							<td>Enter your Project Details here, Enter your Project Details here lorem ipsum bacon. em ipsum bacon. Project Details
+								here lorem ipsum bacon.lor</td>
+						</tr>
+						<tr>
+							<td class="col1">Digital Image Processing</td>
+							<td>Enter your Project Details here, Enter your Project Details here lorem ipsum bacon. bacon. Project Details here lorem
+								ipsum bacon.lorem ip </td>
+						</tr>
+						<tr>
+							<td class="col1">Data Mining</td>
+							<td>Enter your Project Details here, Enter your Project Details here lorem ipsum bacon. Project Details here lorem ipsum
+								bacon.lorem ipsum bacon lorem ipsum bacon</td>
+						</tr>
+						<tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<hr>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+
+		jQuery(document).ready(function(){
+			jQuery('.skillbar').each(function(){
+				jQuery(this).find('.skillbar-bar').animate({
+					width:jQuery(this).attr('data-percent')
+				},2000);
+			});
+		});
+
+	</script>
+</body>
+
+</html>
