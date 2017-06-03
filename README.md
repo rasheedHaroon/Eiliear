@@ -1,2 +1,2 @@
 # Eiliear
-A personal project
+An IoT project
