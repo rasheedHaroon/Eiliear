@@ -1,2 +1,2 @@
-# Eiliear
-An IoT project
+# Resume
+Personal Respository for Resume.
